@@ -6,14 +6,14 @@
 ## The Roles of Team Members
 > ### (Software) Development Engineer
 > - David Ortega
-> - Hyunseo Lee
+> - HyunseoLee0
 > ### QA Engineer
 > - David Ortega
-> - Hyunseo Lee
+> - HyunseoLee0
 > ### Project Manager
 > - Farhanishhraque
 > ### Product Manager
 > - Farhanishhraque
 > ### Release Engineer
 > - David Ortega
-> - Hyunseo Lee
+> - HyunseoLee0
