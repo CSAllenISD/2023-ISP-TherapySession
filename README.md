@@ -11,9 +11,9 @@
 > - David Ortega
 > - Hyunseo Lee
 > ### Project Manager
-> - Farhan Ishraque
+> - Farhanishhraque
 > ### Product Manager
-> - Farhan Ishraque
+> - Farhanishhraque
 > ### Release Engineer
 > - David Ortega
 > - Hyunseo Lee
