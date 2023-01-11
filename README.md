@@ -5,15 +5,15 @@
 
 ## The Roles of Team Members
 > ### (Software) Development Engineer
-> - David Ortega
-> - Hyunseo Lee
+> - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
+> - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
 > ### QA Engineer
-> - David Ortega
-> - Hyunseo Lee
+> - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
+> - Farhanisshraque ([Farhan Ishraque](https://codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html))
 > ### Project Manager
-> - Farhan Ishraque
+> - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
 > ### Product Manager
-> - Farhan Ishraque
+> - Farhanishhraque ([Farhan Ishraque](https://codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html))
 > ### Release Engineer
-> - David Ortega
-> - Hyunseo Lee
+> - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
+> - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
