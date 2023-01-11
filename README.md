@@ -9,9 +9,9 @@
 > - Hyunseo Lee
 > ### QA Engineer
 > - David Ortega
-> - Hyunseo Lee
-> ### Project Manager
 > - Farhanishhraque
+> ### Project Manager
+> - Hyunseo Lee
 > ### Product Manager
 > - Farhanishhraque
 > ### Release Engineer
