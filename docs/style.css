@@ -1,17 +1,20 @@
 h1 {
-    font-color: "red";
+    font-color: #FF1000;
     font-size: "20px";
     font-family: "Helvetica";
+    position: centered;
 }
 h2 {
-    font-color: "darkred";
+    font-color: #FF5600;
     font-size: "17px";
     font-family: "Helvetica";
+    position: centered;
 }
 p {
-    font-color: "blue";
+    font-color: #100FFF;
     font-size: "12px";
-    font-family: "Trebuchet-MS";
+    font-family: "Trebuchet";
+    position: right;
 }
 .button {
     test
