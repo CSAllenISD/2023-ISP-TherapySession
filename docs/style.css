@@ -1,3 +1,9 @@
+div {
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:20px;
+    margin-bottom:15px;
+} 
 h1 {
     font-color: #FF1000;
     font-size: "20px";
@@ -13,16 +19,27 @@ h2 {
 p {
     font-color: #100FFF;
     font-size: "12px";
-    font-family: "Trebuchet";
+    font-family: "Trebuchet MS";
     position: right;
 }
 .button {
-    test
-}
+    color: #3CD8DF;
+    font-family: "Trebuchet MS";
+    border-style: inset;
+    font-size:80px;
+    padding: 1px 10px;
+    margin: 200px 20px;
+    transition-duration: 0.4s;
+    animation-name: button;
+    animation-duration: 2.2s;
+    animation-timing-function: ease;
+}   
 .start {
-    animation-name: "fade";
+    cursor: pointer;
+    onclick: "questions.html";
 }
 .start:hover {
     background-color: #53FFF5;
+    color: #1CBFC6;
 }
 
