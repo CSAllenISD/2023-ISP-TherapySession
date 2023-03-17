@@ -3,27 +3,32 @@ div {
     margin-right:100px;
     margin-top:20px;
     margin-bottom:15px;
-} 
+}
+body {
+    background: #E8FEFF;
+    animation: fadebg 12s;
+    animation-fill-mode: forwards;
+}
 h1 {
-    font-color: #FF1000;
+    color: #FF1000;
     font-size: "20px";
     font-family: "Helvetica";
-    position: centered;
+    position: fixed;
 }
 h2 {
-    font-color: #FF5600;
+    color: #FF5600;
     font-size: "17px";
     font-family: "Helvetica";
-    position: centered;
+    position: fixed;
 }
 p {
-    font-color: #100FFF;
+    color: #100FFF;
     font-size: "12px";
     font-family: "Trebuchet MS";
-    position: right;
+    position: absolute;
 }
 .button {
-    color: #3CD8DF;
+    background-color: #3CD8DF;
     font-family: "Trebuchet MS";
     border-style: inset;
     font-size:80px;
@@ -33,6 +38,7 @@ p {
     animation-name: button;
     animation-duration: 2.2s;
     animation-timing-function: ease;
+    position: sticky;
 }   
 .start {
     cursor: pointer;
@@ -42,4 +48,7 @@ p {
     background-color: #53FFF5;
     color: #1CBFC6;
 }
-
+@keyframes fadebg {
+    from {background-color: #E8FEFF;}
+    to {background-color: #B5F9FC;}
+}
