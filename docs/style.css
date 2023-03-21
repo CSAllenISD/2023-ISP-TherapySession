@@ -7,6 +7,7 @@ div {
 body {
     background-image: url("../images/snow_background.jpeg");
     background-color: #FFFFFF;
+    background-size: cover;
 }
 h1 {
     color: #FF1000;
@@ -18,7 +19,7 @@ h2 {
     color: #FF5600;
     font-size: "17px";
     font-family: "Helvetica";
-    position: fixed;
+    position: relative;
 }
 p {
     color: #100FFF;
