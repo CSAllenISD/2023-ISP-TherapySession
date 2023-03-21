@@ -5,7 +5,7 @@ div {
     margin-bottom:15px;
 }
 body {
-    background-image: url("../images/snow_background.jpeg");
+    background-image: url('../images/snow_background.jpeg');
     background-color: #FFFFFF;
     background-size: cover;
 }
