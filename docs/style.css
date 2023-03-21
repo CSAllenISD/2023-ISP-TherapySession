@@ -5,9 +5,8 @@ div {
     margin-bottom:15px;
 }
 body {
-    background: #E8FEFF;
-    animation: fadebg 12s;
-    animation-fill-mode: forwards;
+    background-image: url("../images/snow_background.jpeg");
+    background-color: #FFFFFF;
 }
 h1 {
     color: #FF1000;
@@ -48,7 +47,4 @@ p {
     background-color: #53FFF5;
     color: #1CBFC6;
 }
-@keyframes fadebg {
-    from {background-color: #E8FEFF;}
-    to {background-color: #B5F9FC;}
-}
+
