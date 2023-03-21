@@ -3,11 +3,11 @@ div {
     margin-right:100px;
     margin-top:20px;
     margin-bottom:15px;
+    background-image: url('../images/snow_background.jpeg');
+    background-size: cover;
 }
 body {
-    background-image: url('../images/snow_background.jpeg');
-    background-color: #FFFFFF;
-    background-size: cover;
+    font-size: "10px";
 }
 h1 {
     color: #FF1000;
