@@ -19,12 +19,43 @@
             the checkbox will have code too
           </p>
 
+	  <!-- <input type="checkbox" id="questiontypesad">
+
+	  <script>
+	    let count = 0;
+	    const checkbox = document.getElementById("questiontypesad");
+	    checkbox.addEventListener("click", function() {
+		if (this.checked) {
+		    count++;
+		} else {
+		    count--;
+		}
+		console.log("Count is now: " + count);
+	    });
+	  </script> -->
+
+	  <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
+	  <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
+	  <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
+	  <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
+
+	  <script>
+	    var count = 0;
+	    function updateCount() {
+		count = 0;
+		var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+		for (var i = 0; i < checkboxes.length; i++) {
+		    count += parseInt(checkboxes[i].value);
+		}
+	    }
+	  </script>
+	  
           <p>
             next button will be here at the bottom
 	    there will also be a back button on the second page
           </p>
 
-	  <a href="questions_extended.html"> next </a>
+	  <a href="questions_extended.html"> <button class="start"> next </a> </button>
 	  
 
 	</body>
