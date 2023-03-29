@@ -7,6 +7,8 @@ div {
 }
 body {
     font-size: "10px";
+    background-image: url("images/snow_background.png");
+    background-color: #cccccc
 }
 h1 {
     color: #FF1000;
