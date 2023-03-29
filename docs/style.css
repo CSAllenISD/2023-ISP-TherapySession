@@ -7,6 +7,8 @@ div {
 }
 body {
     font-size: "10px";
+    background-image: url("../images/snow_background.jpeg");
+    background-color: #cccccc
 }
 h1 {
     color: #FF1000;
@@ -37,7 +39,7 @@ p {
     animation-name: button;
     animation-duration: 2.2s;
     animation-timing-function: ease;
-    position: sticky;
+    position: fixed;
 }   
 .start {
     cursor: pointer;
@@ -46,6 +48,7 @@ p {
 .start:hover {
     background-color: #53FFF5;
     color: #1CBFC6;
+    position: absolute;
 }
 @keyframes button {
     from: {background-color: #3CD8DF;}
