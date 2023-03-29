@@ -9,9 +9,10 @@
 > - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
 > ### QA Engineer
 > - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
-> - Farhanisshraque ([Farhan Ishraque](https://codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html))
+> - Farhanishhraque ([Farhan Ishraque](https://codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html))
 > ### Project Manager
 > - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
+> - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
 > ### Product Manager
 > - Farhanishhraque ([Farhan Ishraque](https://codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html))
 > ### Release Engineer
