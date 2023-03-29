@@ -7,7 +7,7 @@ div {
 }
 body {
     font-size: "10px";
-    background-image: url("images/snow_background.png");
+    background-image: url("../images/snow_background.png");
     background-color: #cccccc
 }
 h1 {
@@ -39,7 +39,7 @@ p {
     animation-name: button;
     animation-duration: 2.2s;
     animation-timing-function: ease;
-    position: sticky;
+    position: fixed;
 }   
 .start {
     cursor: pointer;
