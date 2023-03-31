@@ -52,9 +52,22 @@ p {
     color: #1CBFC6;
     position: absolute;
 }
+.fadetext {
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    color: #276c8a;
+    margin-right: 10%;
+    margin-left: 40px;
+    text-indent: -30px;
+    animation: fadeIn 8s;
+}
 @keyframes button {
     from: {background-color: #3CD8DF;}
     to: {background-color: #53FFF5;}
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 
