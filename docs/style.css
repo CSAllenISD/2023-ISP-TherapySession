@@ -1,6 +1,8 @@
+/*btw farhan and hyunseo, make sure to check styles and specific tags so the style isnt messed up*/
+
 div {
     margin-left:100px;
-    margin-right:100px;
+    margin-right:120px;
     margin-top:20px;
     margin-bottom:15px;
 }
@@ -43,6 +45,7 @@ p {
 .start {
     cursor: pointer;
     onclick: "questions.html";
+    background-size: 20px;
 }
 .start:hover {
     background-color: #53FFF5;
