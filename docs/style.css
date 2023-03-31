@@ -15,7 +15,7 @@ h1 {
     color: #43A5C0;
     font-size: "20px";
     font-family: "Helvetica";
-    position: fixed;
+    position: relative;
 }
 h2 {
     color: #A3EBFF;
@@ -40,12 +40,12 @@ p {
     animation-name: button;
     animation-duration: 2.2s;
     animation-timing-function: ease;
-    position: absolute;
 }   
 .start {
     cursor: pointer;
     onclick: "questions.html";
     background-size: 20px;
+    position: fixed;
 }
 .start:hover {
     background-color: #53FFF5;
