@@ -3,27 +3,26 @@ div {
     margin-right:100px;
     margin-top:20px;
     margin-bottom:15px;
-    background-size: cover;
 }
 body {
     font-size: "10px";
-    background-image: url("../images/snow_background.jpeg");
-    background-color: #cccccc
+    background-image: url("snowtest_background.jpeg");
+    background-size: cover;
 }
 h1 {
-    color: #FF1000;
+    color: #43A5C0;
     font-size: "20px";
     font-family: "Helvetica";
-    position: absolute;
+    position: fixed;
 }
 h2 {
-    color: #FF5600;
+    color: #A3EBFF;
     font-size: "17px";
     font-family: "Helvetica";
     position: relative;
 }
 p {
-    color: #100FFF;
+    color: #00C8FF;
     font-size: "12px";
     font-family: "Trebuchet MS";
     position: absolute;
@@ -39,7 +38,7 @@ p {
     animation-name: button;
     animation-duration: 2.2s;
     animation-timing-function: ease;
-    position: fixed;
+    position: absolute;
 }   
 .start {
     cursor: pointer;
