@@ -37,32 +37,33 @@
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
       <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
+
+      <p>
+	next button will be here at the bottom
+	there will also be a back button on the second page (this one)
+      </p>
       
-    </body>
-    
+      <a href="questions_final.html"><button class="start"> next </button></a>
+      <a href="questions.html"><button class="start"> back </buton></a>
+</body>
 
 
-  </div>
+
+</div>
 </html>
-  <script>
-    
-    var count = 0;
-    function updateCount() {
-        count = 0;
-        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-        for (var i = 0; i < checkboxes.length; i++) {
-            count += parseInt(checkboxes[i].value);
-        }
-    }
-  </script>
+<script>
+  
+  var count = 0;
+  function updateCount() {
+      count = 0;
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      for (var i = 0; i < checkboxes.length; i++) {
+          count += parseInt(checkboxes[i].value);
+      }
+  }
+</script>
 
-  <p>
-    next button will be here at the bottom
-    there will also be a back button on the second page (this one)
-  </p>
 
-  <a href="questions_final.html"><button class="start"> next </button></a>
-  <a href="questions.html"><button class="start"> back </buton></a>
 
 
 
