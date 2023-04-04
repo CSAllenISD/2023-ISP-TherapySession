@@ -35,21 +35,21 @@ p {
     border-style: inset;
     font-size: 80px;
     padding: 1px 10px;
+    display: inline-block;
     margin: 200px 20px;
-    transition-duration: 0.4s;
-    animation-name: button;
-    animation-duration: 2.2s;
-    animation-timing-function: ease;
 }   
 .start {
     cursor: pointer;
     onclick: "questions.html";
     background-size: 20px;
     position: fixed;
+    width: 25%;
+    height: 20%;
+    transition: 0.9s;
 }
 .start:hover {
     background-color: #53FFF5;
-    color: #1CBFC6;
+    color: white;
     position: absolute;
 }
 .fadetext {
