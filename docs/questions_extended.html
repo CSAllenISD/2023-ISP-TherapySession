@@ -39,30 +39,30 @@
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
       
     </body>
-      <script>
-	
-        var count = 0;
-        function updateCount() {
-            count = 0;
-            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-            for (var i = 0; i < checkboxes.length; i++) {
-                count += parseInt(checkboxes[i].value);
-            }
+    
+
+
+  </div>
+  <script>
+    
+    var count = 0;
+    function updateCount() {
+        count = 0;
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        for (var i = 0; i < checkboxes.length; i++) {
+            count += parseInt(checkboxes[i].value);
         }
-      </script>
+    }
+  </script>
 
-      <p>
-        next button will be here at the bottom
-	there will also be a back button on the second page (this one)
-      </p>
+  <p>
+    next button will be here at the bottom
+    there will also be a back button on the second page (this one)
+  </p>
 
-      <a href="questions_final.html"><button class="start"> next </button></a>
-      <a href="questions.html"><button class="start"> back </buton></a>
+  <a href="questions_final.html"><button class="start"> next </button></a>
+  <a href="questions.html"><button class="start"> back </buton></a>
 
-
-
-
-</div>
 </html>
 
 
