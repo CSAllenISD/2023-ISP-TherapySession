@@ -31,9 +31,15 @@
       <p> Please describe/summarize your past expereinces </p><br>
       <br>
 
+<<<<<<< HEAD
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/><br>
       <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/><br>
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/><br>
+=======
+      <input type="checkbox" name="category2" value="1" onclick="updateCount()"/>
+      <input type="checkbox" name="category3" value="1" onclick="updateCount()"/>
+      <input type="checkbox" name="category4" value="1" onclick="updateCount()"/>
+>>>>>>> 2ad6d49293b3725f4b35346922ccba048233c212
 
       <p> Can you tell me more about your past experiences and how they may be impacting you now? </p><br>
       <br>
@@ -62,7 +68,7 @@
   var count = 0;
   function updateCount() {
       count = 0;
-      var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      var checkboxes = document.querySelectorAll('input[type="category"]:checked');
       for (var i = 0; i < checkboxes.length; i++) {
           count += parseInt(checkboxes[i].value);
       }
