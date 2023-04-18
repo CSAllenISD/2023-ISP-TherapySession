@@ -1,19 +1,32 @@
 <!DOCTYPE = html>
 <html lang="en">
   <link="stylesheet" rel="style.css">
-
-
-    <div>
       <head>
 	<title>
 	  Questions
         </title>
+      </head>
+      
 
-	<body>
+      <body>
+	<div>
+	  
 	  <h1>
             Scroll down to see the questions
           </h1>
-	
+
+	  <script>
+	    var count = 0;
+	    function updateCount() {
+                count = 0;
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    count += parseInt(checkboxes[i].value);
+		}
+	    }
+
+          </script>
+	  
           <p>
             questions will be here formatted in a square and checkbox. <br>
             the checkbox will have code too
@@ -32,7 +45,6 @@
 	  
 
 	</body>
-      </head>
     </div>
 </html>
 
