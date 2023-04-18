@@ -64,7 +64,7 @@ p {
 .next:hover {
     background-color: white;
     color: grey;
-    position: absolute;
+    position: static;
 }  
 .fadetext {
     font-family: Trebuchet MS;
