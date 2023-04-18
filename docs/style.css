@@ -24,7 +24,7 @@ h2 {
     position: relative;
 }
 p {
-    color: #808000;
+    color: #;
     font-size: "100px";
     font-family: "Trebuchet MS";
     position: absolute;
@@ -52,6 +52,20 @@ p {
     color: white;
     position: absolute;
 }
+.next {
+    cursor: pointer;
+    onclick: "questions.html";
+    background-size: 20px;
+    position: fixed;
+    width: 5%;
+    height: 5%;
+    transition: 0.5s;
+}
+.next:hover {
+    background-color: white;
+    color: grey;
+    position: absolute;
+}  
 .fadetext {
     font-family: Trebuchet MS;
     font-size: 20px;
