@@ -20,6 +20,6 @@
 > - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
 
 ## GANTT Chart
-> ![Alt chart](docs/images/GANTT Chart 2023 ISP.pdf)
+> ![Alt chart](docs/images/GANTTChart2023ISP.pdf)
 
 
