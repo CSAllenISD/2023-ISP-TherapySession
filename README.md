@@ -18,3 +18,8 @@
 > ### Release Engineer
 > - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
 > - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
+
+## GANTT Chart
+> ![Alt chart](docs/images/GANTT Chart 2023 ISP.pdf)
+
+
