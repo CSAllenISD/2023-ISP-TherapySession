@@ -32,13 +32,13 @@ h1 {
 nav {
     background-color: #555;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 18px;
     padding: 5px;
 }
@@ -51,6 +51,7 @@ main {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-top: 40px;
 }
 /*h2 {
     color: #A3EBFF;
@@ -77,6 +78,14 @@ button {
 }
 button:hover {
     background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
 }
 .button {
     background-color: #3CD8DF;
