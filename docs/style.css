@@ -63,7 +63,6 @@ main, section#about-us {
 p {
     margin-bottom: 10px;
     line-height: 1.5;
-    margin-left: 30px;
 }
 p2 {
     /*color: #;
@@ -71,7 +70,7 @@ p2 {
     font-family: "Trebuchet MS";
     position: absolute;*/
     margin-bottom: 10px;
-    margin-left: 25px;
+    margin-left: 65px;
     margin-right: 5px;
     line-height: 1.5;
     font-size: 25px;
