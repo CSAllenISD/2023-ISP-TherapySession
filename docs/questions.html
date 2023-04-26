@@ -9,6 +9,7 @@
 
 <!-- <body style="background-color:aquamarine;"> -->
   <script>
+    /* checkbox creation and count */
     var count = 0;
     function updateCount() {
 	count = 0;
@@ -17,6 +18,31 @@
             count += parseInt(checkboxes[i].value);
 	}
     }
+    /* event listeners (detects checkbox click) */
+    document.getElementById('checkbox1').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox1');
+    });
+    document.getElementById('checkbox2').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox2');
+    });
+    document.getElementById('checkbox3').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox3');
+    });
+
+    // Update link based on count
+    const link = document.getElementById('link');
+    if (count === 0) {
+	link.href = '#';
+    } else if (count === 1) {
+	link.href = 'questions_extended.html';
+    } else if (count === 2) {
+	link.href = 'questions_extended2.html';
+    } else if (count === 3) {
+	link.href = 'https://www.coolmathgames.com/';
+    }
+    }
+    
+    
   </script>
 <body>
   <div>
@@ -27,6 +53,9 @@
 	  
 	  <h1>
             Section 1: Basic questions to help get you started and to know you better<br><br>
+	    <p>Count: <span id="count">0</span></p>
+	    <a id="link" href="#">Visit Website</a>
+	      
 	    <a href="index.html"><button>Back</button></a>
 	    <a href="questions_extended.html"><button>Next</button></a>
 	    

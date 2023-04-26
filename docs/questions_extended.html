@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/brainperson.ico">
     <link rel="stylesheet" href="style.css">
-   
+  </head>
+
+  <script>
+  
+  var count = 0;
+  function updateCount() {
+      count = 0;
+      var checkboxes = document.querySelectorAll('input[type="category"]:checked');
+      for (var i = 0; i < checkboxes.length; i++) {
+          count += parseInt(checkboxes[i].value);
+      }
+  }
+  </script>
+
 
     <title>
-      Questions
+      Questions Continued
     </title>
-    <head>
     
       <body>
 	<div>
       <h1>
-        Scroll down to see the questions
+        Section 2: Questions based on your previous answers (this is extended1) 
       </h1>
+
+      <br>
+      <br>
       
       <p>questions will be here formatted in a square and checkbox.</p><br>
       <br>
@@ -64,17 +79,6 @@
 </div>
 </html>
 
-<script>
-  
-  var count = 0;
-  function updateCount() {
-      count = 0;
-      var checkboxes = document.querySelectorAll('input[type="category"]:checked');
-      for (var i = 0; i < checkboxes.length; i++) {
-          count += parseInt(checkboxes[i].value);
-      }
-  }
-</script>
 
 
 
