@@ -9,7 +9,8 @@
 
 <!-- <body style="background-color:aquamarine;"> -->
   <script>
-    var count = 0;
+    /* checkbox creation and count */
+    var count = 2;
     function updateCount() {
 	count = 0;
 	var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -17,6 +18,31 @@
             count += parseInt(checkboxes[i].value);
 	}
     }
+    /* event listeners (detects checkbox click) */
+    document.getElementById('checkbox1').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox1');
+    });
+    document.getElementById('checkbox2').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox2');
+    });
+    document.getElementById('checkbox3').addEventListener('click', updateCount() {
+	handleCheckboxClick('checkbox3');
+    });
+
+    // Update link based on count
+    const link = document.getElementById('link');
+    if (count === 0) {
+	link.href = '#';
+    } else if (count === 1) {
+	link.href = 'questions_extended.html';
+    } else if (count === 2) {
+	link.href = 'questions_extended2.html';
+    } else if (count === 3) {
+	link.href = 'https://www.coolmathgames.com/';
+    }
+    }
+    
+    
   </script>
 <body>
   <div>
@@ -24,14 +50,33 @@
 	<title>
 	  Questions
         </title>
-	  
+
+	<header>
 	  <h1>
             Section 1: Basic questions to help get you started and to know you better<br><br>
+	</header>
+	</h1>
+	
+	<nav>
+	  <a href="#" style="font-size: 30px;">Home</a>
+	  <a href="aboutus.html">About Us</a>
+	  <a href="contactinfo.html">Contact Us</a>
+	  <a href="FAQ.html">FAQs</a>
+	  <a href="reviews.html">Send Feedback</a>
+	</nav>
+
+	<center>
+	    <p>Count: <span id="count">0</span></p>
+	    <a id="link" href="#">Visit Website</a>
+	      
 	    <a href="index.html"><button>Back</button></a>
 	    <a href="questions_extended.html"><button>Next</button></a>
+	</center>
+	
 	    
           </h1>
-	
+
+	  <main>
 	
           <p2>
             1.Do you have sudden mood swings? <br>
@@ -137,51 +182,51 @@
 
 	<p2>
 	    11.Have you felt particularly low or down for more than 2 weeks in a row? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
+	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes <br>
+	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Close to two weeks <br>
+	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Less than a week <br>
+	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Perhaps a day or two <br>
 	</p2>
 	
 	    <br>
 
 	<p2>
 	    12. Do you think about past events too much? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
+	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I think about them constantly <br>
+	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I think about them from time to time <br>
+	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I've thought about them for a day or two only <br>
+	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Why live in the past? <br>
 	</p2>
 	
 	    <br>
 
 	<p2>
 	    13. Do you constantly feel like checking things like if the door is locked in the house or if the stove if off? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
+	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes, it's one of my pet peeves <br>
+	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Not at all. I trust myself enough <br>
+	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I like to check sometimes just in case <br>
+	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I only do that for valuable items <br>
 	</p2>
 	
 	    <br>
 
+	    <a href="questions_extended.html">
+	      <button class="start"> Next </button>  </a><br><br><br>
+	    	    <a href="index.html">
+	    
+	    	  <a href="questions_extended.html"> <button class="start"> Next </button> </a>
 	<p2>
 	    14. Do you have any worries/fears? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
+	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> 
 	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
 	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
 	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
-	  </p2>
+	</p2>
+	</main>
 	<br>
-	
-	    <a href="questions_extended.html">
-	      <button class="start"> Next </button>  </a><br><br><br>
-	    <a href="index.html">
-	              <button class="start"> Back </button>  </a>  
-         
 	  
 
-	  <a href="questions_extended.html"> <button class="start"> Next </button> </a>
+
 
 	  <!-- <input type="checkbox" id="questiontypesad">
 
@@ -206,10 +251,9 @@
 	  -->
 
 	  <br>
-	 
-	</body>
-      </head>
-    </div>
+
+  </div>
+</body>
 </html>
 
 
