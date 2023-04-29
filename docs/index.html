@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title> Health Questionnaire</title>
+    <title>Health Questionnaire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/brainperson.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
  
   <body>
@@ -14,11 +14,11 @@
     </header>
 
     <nav>
-      <a href="#" style="font-size: 30px;">Home</a>
+      <a href="index.html" style="font-size: 30px;">Home</a>
       <a href="aboutus.html">About Us</a>
       <a href="contactinfo.html">Contact Us</a>
-      <a href="FAQ.html">FAQs</a>
-      <a href="reviews.html">Send Feedback</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="#send-feedback">Send Feedback</a>
     </nav>
 
     <main>
@@ -35,6 +35,34 @@
       <a href="aboutus.html">
 	<button>Learn More</button>
       </a>
+    </section>
+
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or concerns, please don't hesitate to contact us.</p>
+      <a href="contactinfo.html">
+	<button>Contact Info</button>
+      </a>
+    </section>
+
+    <section id="faqs">
+      <h2>FAQs</h2>
+      <p>Get answers to some common questions about our health questionnaire.</p>
+      <a href="faqs.html"><button>View FAQs</button></a>
+    </section>
+
+    <section id="send-feedback">
+      <h2>Send Feedback</h2>
+      <p>We welcome any feedback or suggestions you may have. Please fill out the form below to send us your feedback.</p>
+      <form>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required><br><br>
+	<label for="email">Email:</label>
+	<input type="text" id="name" name="name" required><br><br>
+	<label for="feedback">Feedback:</label>
+	<textarea id="feedback" name="feedback" required></textarea><br><br>
+	<button type="submit">Submit</button>
+      </form>
     </section>
 
     <footer>
