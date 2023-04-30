@@ -17,4 +17,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
 	}, (err) => {
 	    btn.value = "Failed!";
 	});
+    document.getElementById("formContainer").style.display = "none";
+    document.getElementById("thankYou").style.display = "block";
 });

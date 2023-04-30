@@ -56,15 +56,20 @@
     <section id="send-feedback">
       <h2>Send Feedback</h2>
       <p>We welcome any feedback or suggestions you may have. Please fill out the form below to send us your feedback.</p>
-      <form id="form">
-	<label for="name">Name:</label>
-	<input type="text" id="name" name="name" required><br><br>
-	<label for="email">Email:</label>
-	<input type="email" id="email" name="email" required><br><br>
-	<label for="feedback">Feedback:</label>
-	<textarea id="feedback" name="feedback" required></textarea><br><br>
-	<input type="submit" id="submit" name="submit" value="Submit">
-      </form>
+      <div id="formContainer">
+	<form id="form">
+	  <label for="name">Name:</label>
+	  <input type="text" id="name" name="name" required><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" required><br><br>
+	  <label for="feedback">Feedback:</label>
+	  <textarea id="feedback" name="feedback" required></textarea><br><br>
+	  <input type="submit" id="submit" name="submit" value="Submit">
+	</form>
+      </div>
+      <div id="thankYou" style="display: none;">
+	<h3>Thank you for your feedback!</h3>
+      </div>
     </section>
 
     <script src="script.js"></script>
