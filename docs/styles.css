@@ -33,11 +33,9 @@ nav a {
     margin-right: 40px;
     font-size: 18px;
     padding: 5px;
-    transition: font-size 0.3s ease-in-out;
 }
 nav a:hover {
     color: #f2f2f2;
-    font-size: 30px;
 }
 nav.fixed {
     position: fixed;
@@ -167,5 +165,3 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-
