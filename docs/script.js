@@ -8,7 +8,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
     emailjs.sendForm(serviceID, templateID1, this)
         .then(() => {
 	    btn.value = "Submitted!";
-	    window.location.href = 'index.html';
 	}, (err) => {
 	    btn.value = "Failed!";
 	});
@@ -18,4 +17,5 @@ document.getElementById("form").addEventListener("submit", function(event) {
 	}, (err) => {
 	    btn.value = "Failed!";
 	});
+    window.location.href = "index.html";
 });
