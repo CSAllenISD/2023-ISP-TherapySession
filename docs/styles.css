@@ -11,10 +11,6 @@ body {
     background-position: center center;
 }
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -25,10 +21,6 @@ h1 {
     font-size: 36px;
 }
 nav {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
     background-color: #555;
     color: #fff;
     padding: 20px;
@@ -51,9 +43,6 @@ main, section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
-}
-main {
-    margin-top: 200px;
 }
 p {
     margin-bottom: 10px;
