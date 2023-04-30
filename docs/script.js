@@ -45,4 +45,14 @@ $(document).ready(function() {
 	    }
 	}
     });
+    var headerHeight = $('header').outerHeight();
+    $(window).scroll(function() {
+	var scrollPos = $(this).scrollTop();
+	if (scrollPos > headerHeight) {
+	    $('nav').addClass('fixed');
+	} else {
+	    $('nav').removeClass('fixed');
+	}
+
+    });
 });
