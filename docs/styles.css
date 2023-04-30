@@ -21,6 +21,7 @@ h1 {
     font-size: 36px;
 }
 nav {
+    top: 0;
     background-color: #555;
     color: #fff;
     padding: 20px;
@@ -36,6 +37,12 @@ nav a {
 nav a:hover {
     color: #f2f2f2;
 }
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 main, section {
     max-width: 800px;
     margin: 0 auto;
@@ -43,6 +50,9 @@ main, section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
+}
+main.fixednav {
+    margin-top: 130px;
 }
 p {
     margin-bottom: 10px;
