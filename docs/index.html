@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/brainperson.ico">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init("zOqFnyZOQdtzKRjwr");</script>
   </head>
  
   <body>
@@ -54,16 +56,18 @@
     <section id="send-feedback">
       <h2>Send Feedback</h2>
       <p>We welcome any feedback or suggestions you may have. Please fill out the form below to send us your feedback.</p>
-      <form>
+      <form id="form">
 	<label for="name">Name:</label>
 	<input type="text" id="name" name="name" required><br><br>
 	<label for="email">Email:</label>
 	<input type="text" id="name" name="name" required><br><br>
 	<label for="feedback">Feedback:</label>
 	<textarea id="feedback" name="feedback" required></textarea><br><br>
-	<button type="submit">Submit</button>
+	<input type="submit" id="submit" name="submit" value="Submit">
       </form>
     </section>
+
+    <script src="script.js"></script>
 
     <footer>
       <p>&copy; 2023 Health Questionnaire. All rights reserved.</p>
