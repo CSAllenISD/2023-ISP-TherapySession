@@ -50,9 +50,12 @@ $(document).ready(function() {
 	var scrollPos = $(this).scrollTop();
 	if (scrollPos > headerHeight) {
 	    $('nav').addClass('fixed');
+	    $('main').addClass('fixednav');
 	} else {
 	    $('nav').removeClass('fixed');
+	    $('main').removeClass('fixednav');
 	}
+	
 
     });
 });
