@@ -17,5 +17,4 @@ document.getElementById("form").addEventListener("submit", function(event) {
 	}, (err) => {
 	    btn.value = "Failed!";
 	});
-    window.location.href = "index.html";
 });
