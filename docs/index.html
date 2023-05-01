@@ -2,23 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title> Health Questionnaire</title>
+    <title>Health Questionnaire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/brainperson.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init("zOqFnyZOQdtzKRjwr");</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
  
   <body>
-    <header>
+    <header id="top">
       <h1>Health Questionnaire</h1>
     </header>
 
     <nav>
-      <a href="#" style="font-size: 30px;">Home</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contactinfo.html">Contact Us</a>
-      <a href="FAQ.html">FAQs</a>
-      <a href="reviews.html">Send Feedback</a>
+      <a href="#top" id="homeButton">Home</a>
+      <a href="#about-us" class="about-us">About Us</a>
+      <a href="#contact-us">Contact Us</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#send-feedback" id="sendFeedbackButton">Send Feedback</a>
     </nav>
 
     <main>
@@ -32,10 +35,58 @@
     <section id="about-us">
       <h2>About Us</h2>
       <p>We are a team of health questionnaire dedicated to promoting health and wellness through innovative personalized care.</p>
-      <a href="aboutus.html">
-	<button>Learn More</button>
-      </a>
+      <div class="more-info about-us">
+	<h3>Our Mission</h3>
+	<p>Our main goals for this website are to give as much help as we can to a large audience in a simple but interactive way. We also want to provide a clean looking website with functional javascript working behind the scenes making the site very practical and functional for everyone to use.</p>
+	<h3>What We Do</h3>
+	<p>We are a team working around the clock modifying this health questionnaire 24/7 to provide only the best experience for our audience. We help provide easy to answer questions with personalize results that are accurate to the user, and we also like to have fun adding interactive and fun but modern styles to our site to keep it looking fresh and clean.</p>
+      </div>
+      <button class="more-button about-us">Show Details</button>
     </section>
+
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or concerns, please don't hesitate to contact us.</p>
+      <div class="more-info contact-us">
+	<h3>David Ortega (Software Engineer, QA Engineer, Project Manager, Release Engineer)</h3>
+	<p>Email: david.ortega@student.allenisd.org<br>Phone: <br><a href="https://www.codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html">Digital Portfolio Link</a></p>
+	<h3>Hyunseo Lee (Software Engineer, Project Manager, Release Engineer)</h3>
+	<p>Email: hyunseo.lee@student.allenisd.org<br>Phone: <br><a href="https://www.codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html">Digital Portfolio Link</a></p>
+	<h3>Farhan Ishraque (QA Engineer, Product Manager)</h3>
+	<p>Email: farhan.ishraque@student.allenisd.org<br>Phone: <br><a href="https://www.codermerlin.com/users/farhan-ishraque/Digital%20Portfolio/index.html">Digital Portfolio Link</a></p>
+      </div>
+      <button class="more-button contact-us">Contact Info</button>
+    </section>
+
+    <section id="faqs">
+      <h2>FAQs</h2>
+      <p>Get answers to some common questions about our health questionnaire.</p>
+      <div class="more-info faqs">
+      </div>
+      <button class="more-button faqs">View FAQs</button></a>
+    </section>
+
+    <section id="send-feedback">
+      <h2>Send Feedback</h2>
+      <p>We welcome any feedback or suggestions you may have. Please fill out the form below to send us your feedback.</p>
+      <div class="more-info send-feedback" id="formContainer">
+	<form id="form">
+	  <label for="name">Name:</label>
+	  <input type="text" id="name" name="name" required><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" required><br><br>
+	  <label for="feedback">Feedback:</label>
+	  <textarea id="feedback" name="feedback" required></textarea><br><br>
+	  <input type="submit" id="submit" name="submit" value="Submit">
+	</form>
+      </div>
+      <button class="more-button send-feedback">Open Feedback Form</button>
+      <div id="thankYou" style="display: none;">
+	<h3>Thank you for your feedback!</h3>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
 
     <footer>
       <p>&copy; 2023 Health Questionnaire. All rights reserved.</p>

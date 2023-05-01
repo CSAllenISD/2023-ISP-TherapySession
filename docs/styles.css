@@ -1,19 +1,14 @@
 /*btw farhan and hyunseo, make sure to check styles and specific tags so the style isnt messed up*/
 
-/*div {
-    margin-left:100px;
-    margin-right:120px;
-    margin-top:20px;
-    margin-bottom:15px;
-}*/
 body {
-/*    font-size: "10px"; */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     background-image: url("images/snow_background.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 header {
     background-color: #333;
@@ -21,17 +16,12 @@ header {
     padding: 20px;
     text-align: center;
 }
-h1 {	
-/*    color: #43A5C0;
-    font-size: "20px";
-    font-family: "Helvetica";
-    position: relative; */
+h1 {
     margin: 0;
-    margin-top: 15px;
-    margin-left: 25px;
     font-size: 36px;
 }
 nav {
+    top: 0;
     background-color: #555;
     color: #fff;
     padding: 20px;
@@ -43,24 +33,48 @@ nav a {
     margin-right: 40px;
     font-size: 18px;
     padding: 5px;
+    transition: 0.3s ease-in-out;    
 }
 nav a:hover {
-    color: #f2f2f2;
+    color: yellow;
+    font-size: 1.2em;
 }
-main, section#about-us {
-    max-width: 800px;
-    margin: 1 auto;
-    padding: 20px;
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+main, section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 20px 20px 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
 }
-/*h2 {
-    color: #A3EBFF;
-    font-size: "24px";
-    font-family: "Helvetica";
-    position: relative;
-}*/
+main.fixednav {
+    margin-top: 130px;
+}
+.more-info {
+    padding: 0px 20px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 1s ease-in-out;
+    background-color: #f2f2f2;
+}
+.more-info.show {
+    max-height: 200px;
+    overflow-y: auto;
+    transition: 1s ease-in-out;
+}
+.more-info.show.send-feedback {
+    padding: 20px;
+    transition: 1s ease-in-out;
+}
+.more-info::-webkit-scrollbar {
+    display: none;
+}
 p {
     margin-bottom: 10px;
     line-height: 1.5;
@@ -76,7 +90,7 @@ p2 {
     line-height: 1.5;
     font-size: 25px;
 }
-button {
+button, input[type="submit"] {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -85,8 +99,30 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-button:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #555;
+}
+form {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+textarea {
+    height: 150px;
 }
 footer {
     background-color: #333;
@@ -150,5 +186,3 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-
