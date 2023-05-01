@@ -27,6 +27,7 @@ form.addEventListener('submit', (event) => {
 	});
     var formContainer = document.getElementById('formContainer');
     formContainer.classList.toggle('show');
+    document.querySelector('.more-button.send-feedback').style.display = 'none';
     document.getElementById('thankYou').style.display = 'block';    
 });
 $(document).ready(function() {
