@@ -10,7 +10,7 @@
 <!-- <body style="background-color:aquamarine;"> -->
   <script>
     /* checkbox creation and count */
-    var count = 2;
+    var count = 0;
     function updateCount() {
 	count = 0;
 	var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -19,14 +19,17 @@
 	}
     }
     /* event listeners (detects checkbox click) */
-    document.getElementById('checkbox1').addEventListener('click', updateCount() {
+    document.getElementById('checkbox1').addEventListener('click', function() {
 	handleCheckboxClick('checkbox1');
+	updateCount();
     });
-    document.getElementById('checkbox2').addEventListener('click', updateCount() {
+    document.getElementById('checkbox2').addEventListener('click', function() {
 	handleCheckboxClick('checkbox2');
+	updateCount();
     });
-    document.getElementById('checkbox3').addEventListener('click', updateCount() {
+    document.getElementById('checkbox3').addEventListener('click', function() {
 	handleCheckboxClick('checkbox3');
+	updateCount();
     });
 
     // Update link based on count
@@ -40,16 +43,13 @@
     } else if (count === 3) {
 	link.href = 'https://www.coolmathgames.com/';
     }
-    }
     
     
   </script>
 <body>
-  <div>
-      <head>
-	<title>
-	  Questions
-        </title>
+  <title>
+    Questions
+  </title>
 
 	<header>
 	  <h1>
@@ -63,16 +63,7 @@
 	  <a href="contactinfo.html">Contact Us</a>
 	  <a href="FAQ.html">FAQs</a>
 	  <a href="reviews.html">Send Feedback</a>
-	</nav>
-
-	<center>
-	    <p>Count: <span id="count">0</span></p>
-	    <a id="link" href="#">Visit Website</a>
-	      
-	    <a href="index.html"><button>Back</button></a>
-	    <a href="questions_extended.html"><button>Next</button></a>
-	</center>
-	
+	</nav>	
 	    
           </h1>
 
@@ -81,9 +72,9 @@
           <p2>
             1.Do you have sudden mood swings? <br>
 	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Nope <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>  Rarely <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>  Sometimes <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>  Often <br>
+	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Rarely <br>
+	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Sometimes <br>
+	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Often <br>
 	    <!-- <input type="checkbox" id="vehicle1" value="Bike"> <br> -->
 	  </p2>
 	  
@@ -210,11 +201,6 @@
 	
 	    <br>
 
-	    <a href="questions_extended.html">
-	      <button class="start"> Next </button>  </a><br><br><br>
-	    	    <a href="index.html">
-	    
-	    	  <a href="questions_extended.html"> <button class="start"> Next </button> </a>
 	<p2>
 	    14. Do you have any worries/fears? <br>
 	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> 
@@ -222,6 +208,14 @@
 	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
 	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
 	</p2>
+	
+	<center>
+	  <p>Count: <span id="count">0</span></p>
+	  <a id="link" href="#">Visit Website</a>
+          <a href="index.html"><button>Back</button></a>
+	  <a href="questions_extended.html"><button>Next</button></a>
+	</center> 
+	
 	</main>
 	<br>
 	  
