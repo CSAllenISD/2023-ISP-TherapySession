@@ -33,8 +33,7 @@ nav a {
     margin-right: 40px;
     font-size: 18px;
     padding: 5px;
-    transition: 0.3s ease-in-out;
-
+    transition: 0.3s ease-in-out;    
 }
 nav a:hover {
     color: yellow;
@@ -47,7 +46,7 @@ nav.fixed {
     right: 0;
 }
 main, section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 5px 20px 20px 20px;
     background-color: #fff;
@@ -56,6 +55,25 @@ main, section {
 }
 main.fixednav {
     margin-top: 130px;
+}
+.more-info {
+    padding: 0px 20px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 1s ease-in-out;
+    background-color: #f2f2f2;
+}
+.more-info.show {
+    max-height: 200px;
+    overflow-y: auto;
+    transition: 1s ease-in-out;
+}
+.more-info.show.send-feedback {
+    padding: 20px;
+    transition: 1s ease-in-out;
+}
+.more-info::-webkit-scrollbar {
+    display: none;
 }
 p {
     margin-bottom: 10px;
