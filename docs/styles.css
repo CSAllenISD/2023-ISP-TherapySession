@@ -53,6 +53,10 @@ main, section {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
 }
+image, section {
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 main.fixednav {
     margin-top: 130px;
 }
