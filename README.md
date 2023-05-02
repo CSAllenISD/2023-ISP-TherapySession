@@ -19,5 +19,5 @@
 > - ImaCoderLol ([David Ortega](https://codermerlin.com/users/david-ortega/Digital%20Portfolio/index.html))
 > - HyunseoLee0 ([Hyunseo Lee](https://codermerlin.com/users/hyunseo-lee/Digital%20Portfolio/index.html))
 
-## GANTT Chart
+## [GANTT Chart] (https://docs.google.com/spreadsheets/d/1hYiP0mq1xMzHxO50O6rxT8Aybha63-Z4eePW9NowgYw/edit?usp=sharing)
 > ![Alt chart](docs/images/GANTTChartISP20231024.png)
