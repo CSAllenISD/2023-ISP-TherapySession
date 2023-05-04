@@ -10,9 +10,9 @@
       Questions Continued
     </title>
     
- </head>
+</head>
 
-  <script>
+<script>
   
   var count = 0;
   function updateCount() {
@@ -47,39 +47,37 @@
     } else if (count === 3) {
         link.href = 'https://www.coolmathgames.com/';
     }
-    
-  </script>
-  
-  <body>
+
+</script>
+<body>
     <header>
       <h1>
-        Section 2: Questions based on your previous answers (this is extended1) 
+        Section 2: Questions based on your previous answers (this is extended1)
       </h1>
     </header>
 
     <nav>
       <a href="index.html"> Home </a>
-      <a href="index.html #about-us"> About Us </a>
-      <a href="index.html #contact-us"> Contact Us </a>
-      <a href="index.html #faqs"> FAQs </a>
-      <a href="index.html #send-feedback"> Send Feedback </a>
+      <a href="index.html"> About Us </a>
+      <a href="index.html"> Contact Us </a>
+      <a href="index.html"> FAQs </a>
+      <a href="index.html"> Send Feedback </a>
     </nav>
     
     <br>
 
-    <br>
-
       <main>
 	
-      <p2> Have you tried fixing your issues? <br>
+      <p2> 1. Have you tried fixing your issues? <br>
       <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes I have <br>
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I've tried <br>
       <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Rarely <br>
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Not at all <br>
       </p2>
-      
 
-      <p2> Please describe/summarize your past expereinces <br>
+      <br>
+      
+      <p2> 2. Please describe/summarize your past expereinces <br>
       <br>
       <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Traumatizing <br> 
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nothing bad nothing good <br>
@@ -87,15 +85,19 @@
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have some good memories <br>
       </p2>
 
-      <p2> Do you feel as much emotion as you used to? <br>
+      <br>
+
+      <p2> 3. Do you feel as much emotion as you used to? <br>
 	<br>
       <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I still feel them <br>
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nope I'm numb <br>
       <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I only feel extreme emotions <br>
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I feel some but not all <br>
       </p2>
+
+      <br>
       
-      <p2> How often do you indulge in healthy habits like eating fruits and vegetables? <br>
+      <p2> 4. How often do you indulge in healthy habits like eating fruits and vegetables? <br>
       <br>
       <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I generally eat healthy <br>
       <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't eat anything healthy <br>
@@ -103,16 +105,19 @@
       <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have only healthy things as my diet <br>
       </p2>
 
-      <p2> How often do you engage in moderate to vigorous physical activity/exercise? <br>
+      <br>
+      
+      <p2> 5. How often do you engage in moderate to vigorous physical activity/exercise? <br>
 	<br>
 	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> One or two days a week <br>
 	<input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Once a month <br>
 	<input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Usually everyday <br>
 	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> None whatsoever <br>
       </p2>
-      
 
-      <p2> Have you ever been hospitalized for a medical condition? <br>
+      <br>
+      
+      <p2> 6. Have you ever been hospitalized for a medical condition? <br>
 	<br>
 	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Nope <br>
 	<input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't know <br>
@@ -120,7 +125,9 @@
 	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Frequently <br>
       </p2>
 
-      <p2> In the past 7 days, did you need help from others to perform everyday activities?
+      <br>
+      
+      <p2> 7. In the past 7 days, did you need help from others to perform everyday activities?
 	(eating, getting dressed, grooming, bathing, etc.) <br>
 	<br>
 	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I needed a little assistance <br>
@@ -128,8 +135,10 @@
 	<input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Nope I got it all by myself <br>
 	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I needed a lot of assistance <br>
       </p2>
+
+      <br>
       
-      <p2> Do you have trouble sleeping? <br>
+      <p2> 8. Do you have trouble sleeping? <br>
 	<br>
 	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I have one or two nights that I don't sleep <br>
 	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I can sleep just fine <br>
@@ -138,8 +147,10 @@
       </p2>
 
       <center>
-	<a href="questions_final.html"> <button class="start"> Next </button>  </a>
-        <a href="questions.html"> <button class="start"> Back </button>  </a>
+	<p>Count: <span id="count">0</span></p>
+	<a id="link" href="#">Visit Website</a> <br>
+	<a href="index.html"><button>Back</button></a>
+	<a href="questions_extended.html"><button>Next</button></a>
       </center>
       
       </main>

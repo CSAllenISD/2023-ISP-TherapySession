@@ -55,12 +55,12 @@ main, section {
 }
 image, section {
     display: block;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     /* set the aspect ratio */
-    padding-bottom: 75%;
+    padding-bottom: 10%;
 }
 main.fixednav {
     margin-top: 130px;
@@ -94,8 +94,8 @@ p2 {
     font-family: "Trebuchet MS";
     position: absolute;*/
     margin-bottom: 10px;
-    margin-left: 1px;
-    margin-right: 1px;
+    /*margin-left: 1px;
+    margin-right: 1px;*/
     line-height: 1.5;
     font-size: 25px;
 }
