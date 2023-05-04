@@ -54,8 +54,13 @@ main, section {
     margin-top: 40px;
 }
 image, section {
-    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* set the aspect ratio */
+    padding-bottom: 75%;
 }
 main.fixednav {
     margin-top: 130px;
