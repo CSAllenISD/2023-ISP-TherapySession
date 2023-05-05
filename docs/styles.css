@@ -62,7 +62,11 @@ h3 {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     /* set the aspect ratio */
     padding-bottom: 2%;
-    width: 400px;
+    width: auto;
+}
+h4 {
+    font-size: 15px;
+    font-weight: bold;
 }
 main.fixednav {
     margin-top: 130px;
