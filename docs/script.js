@@ -73,3 +73,39 @@ function clickMoreInfoButton(classList,moreButton) {
 	moreButton.innerHTML = moreButton.innerHTML.replace('Hide', 'Show').replace('Close', 'Open').replace('More','View');
     }
 }
+    /* checkbox creation and count */
+    var count = 0;
+    function updateCount() {
+	count = 0;
+	var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+	for (var i = 0; i < checkboxes.length; i++) {
+            count += parseInt(checkboxes[i].value);
+	}
+    }
+    /* event listeners (detects checkbox click) */
+    document.getElementById('checkbox1').addEventListener('click', function() {
+	handleCheckboxClick('checkbox1');
+	updateCount();
+    });
+    document.getElementById('checkbox2').addEventListener('click', function() {
+	handleCheckboxClick('checkbox2');
+	updateCount();
+    });
+    document.getElementById('checkbox3').addEventListener('click', function() {
+	handleCheckboxClick('checkbox3');
+	updateCount();
+    });
+
+    // Update link based on count
+    const link = document.getElementById('link');
+    if (count === 0) {
+	link.href = '#';
+    } else if (count === 1) {
+	link.href = 'questions_extended.html';
+    } else if (count === 2) {
+	link.href = 'questions_extended2.html';
+    } else if (count === 3) {
+	link.href = 'https://www.coolmathgames.com/';
+    }
+
+

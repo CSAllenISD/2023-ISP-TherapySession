@@ -12,43 +12,6 @@
     
 </head>
 
-<script>
-  
-  var count = 0;
-  function updateCount() {
-      count = 0;
-      var checkboxes = document.querySelectorAll('input[type="category"]:checked');
-      for (var i = 0; i < checkboxes.length; i++) {
-          count += parseInt(checkboxes[i].value);
-      }
-  }
-    /* event listeners (detects checkbox click) */
-    document.getElementById('checkbox1').addEventListener('click', function() {
-        handleCheckboxClick('checkbox1');
-        updateCount();
-    });
-    document.getElementById('checkbox2').addEventListener('click', function() {
-        handleCheckboxClick('checkbox2');
-	updateCount();
-    });
-    document.getElementById('checkbox3').addEventListener('click', function() {
-        handleCheckboxClick('checkbox3');
-        updateCount();
-    });
-
-    // Update link based on count
-    const link = document.getElementById('link');
-    if (count === 0) {
-        link.href = '#';
-    } else if (count === 1) {
-        link.href = 'questions_extended.html';
-    } else if (count === 2) {
-        link.href = 'questions_extended2.html';
-    } else if (count === 3) {
-        link.href = 'https://www.coolmathgames.com/';
-    }
-
-</script>
 <body>
     <header>
       <h1>
@@ -148,7 +111,7 @@
 
       <center>
 	<p>Count: <span id="count">0</span></p>
-	<a id="link" href="#">Visit Website</a> <br>
+	<a id="link" href="">Visit Website</a> <br>
 	<a href="questions.html"><button>Back</button></a>
 	<a href="questions_final.html"><button>Next</button></a>
       </center>
@@ -158,6 +121,8 @@
 
       <br>
 
+      <script src="script.js"></script>
+      
       <footer>
 	<p>&copy; 2023 Health Questionnaire. All rights reserved.</p>
       </footer> 
