@@ -48,8 +48,22 @@ main, section {
     margin: 0 auto;
     padding: 5px 20px 20px 20px;
     background-color: #fff;
+    background-size: cover;
+    background-position: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
+}
+#about-us {
+    background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+#contact-us {
+    background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80');
+}
+#faqs {
+    background-image: url('https://images.unsplash.com/photo-1544535830-9df3f56fff6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+}
+#send-feedback {
+    background-image: url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
 }
 main.fixednav {
     margin-top: 130px;
@@ -59,7 +73,7 @@ main.fixednav {
     max-height: 0;
     overflow-y: hidden;
     transition: 1s ease-in-out;
-    background-color: #f2f2f2;
+    background-color: rgba(255,255,255,0.5);
 }
 .more-info.show {
     max-height: 200px;
