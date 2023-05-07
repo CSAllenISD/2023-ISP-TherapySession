@@ -66,10 +66,8 @@ function clickMoreInfoButton(classList,moreButton) {
 	window.location.href = 'faqs.html';
     }	
     if (moreButton.innerHTML.includes('Show') || moreButton.innerHTML.includes('Open') || moreButton.innerHTML.includes('View')) {
-	moreButton.innerHTML = moreButton.innerHTML.replace('Show', 'Hide').replace('Open', 'Close').replace('View','More');
-    } else if (moreButton.innerHTML.toLowerCase().includes('More')) {
-	window.location.href = 'faqs.html';
+	moreButton.innerHTML = moreButton.innerHTML.replace('Show', 'Hide').replace('Open', 'Close').replace('View','Collapse');
     } else {
-	moreButton.innerHTML = moreButton.innerHTML.replace('Hide', 'Show').replace('Close', 'Open').replace('More','View');
+	moreButton.innerHTML = moreButton.innerHTML.replace('Hide', 'Show').replace('Close', 'Open').replace('Collapse','View');
     }
 }

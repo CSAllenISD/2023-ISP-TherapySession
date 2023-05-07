@@ -76,7 +76,7 @@ main.fixednav {
     background-color: rgba(255,255,255,0.5);
 }
 .more-info.show {
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     transition: 1s ease-in-out;
 }
