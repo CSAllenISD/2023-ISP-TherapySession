@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Health Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Health Questionnaire</h1>
+      <form id="questionnaire-form">
+	<h2>General Health Questions:</h2>
+	<label for="question1">Do you smoke?</label>
+	<div class="checkboxes">
+	  <input type="radio" id="never1" name="question1" value="never">
+	  <label for="never1">Never</label>
+	  <input type="radio" id="sometime1" name="question1" value="sometime">
+	  <label for="sometime1">Sometime</label>
+	  <input type="radio" id="often1" name="question1" value="often">
+	  <label for="often1">Often</label>
+	  <input type="radio" id="always1" name="question1" value="always">
+	  <label for="always1">Always</label>
+	</div>
+
+	<label for="question2">Do you drink alcohol?</label>
+	<div class="checkboxes">
+	  <input type="radio" id="never2" name="question2" value="never">
+	  <label for="never2">Never</label>
+	  <input type="radio" id="sometime2" name="question2" value="sometime">
+	  <label for="sometime2">Sometime</label>
+	  <input type="radio" id="often2" name="question2" value="often">
+	  <label for="often2">Often</label>
+	  <input type="radio" id="always2" name="question2" value="always">
+	  <label for="always2">Always</label>
+	</div>
+
+	<h2>Diet and Exercise Questions:</h2>
+	<label for="question3">Do you exercise regularly?</label>
+	<div class="checkboxes">
+	  <input type="radio" id="never3" name="question3" value="never">
+	  <label for="never3">Never</label>
+	  <input type="radio" id="sometime3" name="question3" value="sometime">
+	  <label for="sometime3">Sometime</label>
+	  <input type="radio" id="often3" name="question3" value="often">
+	  <label for="often3">Often</label>
+	  <input type="radio" id="always3" name="question3" value="always">
+	  <label for="always3">Always</label>
+	</div>
+
+	<label for="question4">Do you eat a balanced diet?</label>
+	<div class="checkboxes">
+	  <input type="radio" id="never4" name="question4" value="never">
+	  <label for="never4">Never</label>
+	  <input type="radio" id="sometime4" name="question4" value="sometime">
+	  <label for="sometime4">Sometime</label>
+	  <input type="radio" id="often4" name="question4" value="often">
+	  <label for="often4">Often</label>
+	  <input type="radio" id="always4" name="question4" value="always">
+	  <label for="always4">Always</label>
+	</div>
+<!--	<input type="submit" id="submit" name="submit" value="Submit"> -->
+	<button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="advice-container">
+      <h2 id="advice-title"></h2>
+      <p id="advice-content"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

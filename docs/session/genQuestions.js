@@ -36,7 +36,7 @@ const questions = [
 	choices: ["Six/Seven","Three to Five","One/two","I didn't exercise"]
     },
     {
-	question: "Q10. Overall how would you rate your physical health?",
+	question: "10. Overall how would you rate your physical health?",
 	choices: ["I'm in the best shape I can be","I think I'm decent","I could use some improvements","I'm pretty unhealthy looking"]
     },
     {
