@@ -3,7 +3,7 @@
   <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/brainperson.ico">
+    <link rel="icon" type="image/x-icon" href="../images/brainperson.ico">
     <link rel="stylesheet" href="styles.css">
 
     <title>
@@ -29,23 +29,23 @@
     
     <br>
 
-      <main>
+      <main class="left-align">
 	
       <p2> 1. Have you tried fixing your issues? <br>
-      <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes I have <br>
-      <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I've tried <br>
-      <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Rarely <br>
-      <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Not at all <br>
+      <label> Yes I have <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/></label><br>
+      <label> I've tried <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/></label><br>
+      <label> Rarely <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/></label><br>
+      <label> Not at all <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/></label><br>
       </p2>
 
       <br>
       
       <p2> 2. Please describe/summarize your past expereinces <br>
       <br>
-      <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Traumatizing <br> 
-      <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nothing bad nothing good <br>
-      <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I'd rather not say <br>
-      <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have some good memories <br>
+      <label><input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Traumatizing </label><br> 
+      <label><input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nothing bad nothing good </label><br>
+      <label><input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I'd rather not say </label><br>
+      <label><input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have some good memories </label><br>
       </p2>
 
       <br>
@@ -121,6 +121,8 @@
 
       <br>
 
+    <p id="random_fact"></p>
+    
       <script src="script.js"></script>
       
       <footer>

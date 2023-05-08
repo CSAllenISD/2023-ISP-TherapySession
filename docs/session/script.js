@@ -107,5 +107,19 @@ function clickMoreInfoButton(classList,moreButton) {
     } else if (count === 3) {
 	link.href = 'https://www.coolmathgames.com/';
     }
+const facts = [
+    'The tallest mountain in our solar system is Olympus Mons, located on Mars.',
+    'A group of flamingos is called a flamboyance.',
+    'The Earth has a diameter of about 12,742 kilometers.',
+    'Cats can make over 100 different sounds.'
+];
 
+function generateRandomFact() {
+    const factIndex = Math.floor(Math.random() * facts.length);
+    const random_fact = facts[factIndex];
+    const factElement = document.getElementById('random_fact');
+    factElement.innerHTML = random_fact;
+}
+
+window.onload = generateRandomFact();
 

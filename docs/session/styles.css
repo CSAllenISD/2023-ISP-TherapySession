@@ -53,8 +53,8 @@ main, section {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 40px;
 }
-.main input[type="checkbox"] {
-    float: left;
+.left-align {
+    text-align: left;
 }
 h3 {
     display: block;
