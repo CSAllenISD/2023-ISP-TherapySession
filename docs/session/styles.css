@@ -56,6 +56,13 @@ main, section {
 .left-align {
     text-align: left;
 }
+main input[type="checkbox"] {
+    float: left;
+    margin-right: 10px;
+}
+label {
+    margin-right: 10px;
+}
 h3 {
     display: block;
     max-width: 100%;
