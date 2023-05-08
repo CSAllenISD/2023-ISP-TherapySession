@@ -39,8 +39,9 @@ form.addEventListener('submit', (event) => {
     checkboxes.forEach((checkbox) => {
 	answers[checkbox.value] += 1;
     });
-    score += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
-    window.location.href = "questions_final.html?score=" + score;
+    var scores = +score;
+    scores += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
+    window.location.href = "questions_final.html?score=" + scores;
 });
 /*
 // Update link based on count
