@@ -18,6 +18,10 @@ h1 {
     margin: 0;
     font-size: 36px;
 }
+mark {
+    background-color: grey;
+    opacity: 0.2;
+}
 nav {
     top: 0;
     background-color: #555;
