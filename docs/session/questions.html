@@ -20,11 +20,11 @@
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="index.html">About Us</a>
-    <a href="index.html">Contact Us</a>
-    <a href="index.html">FAQs</a>
-    <a href="index.html">Send Feedback</a>
+    <a href="../index.html">Home</a>
+    <a href="../index.html">About Us</a>
+    <a href="../index.html">Contact Us</a>
+    <a href="../index.html">FAQs</a>
+    <a href="../index.html">Send Feedback</a>
   </nav>	
 
   <br>
@@ -33,10 +33,10 @@
 
   <p2>
             1. Do you have sudden mood swings? <br>
-	    Nope <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"> <br>
-	    Rarely <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"> <br>
-	    Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"> <br>
-	    Often <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"> <br>
+	    <label> Nope <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br>
+	    <label> Rarely <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
+	    <label> Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label><br>
+	    <label> Often <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
 	    <!-- <input type="checkbox" id="vehicle1" value="Bike"> <br> -->
 	  </p2>
 	  
@@ -44,20 +44,20 @@
 
 	<p2>
 	    2. Do you feel sad all the time? <br>
-	    No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()">  <br> 
-	    A little <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"> <br>
-	    Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"> <br>
-	    Yes <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"> <br>
+	    <label> No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br> 
+	    <label> A little <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
+	    <label> Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label>><br>
+	    <label> Yes <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
 	</p2>
 	    
 	    <br>
 
 	<p2>
 	    3. Do you have random thoughts that are hard to get out from your mind?<br>
-	    No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"> <br>
-	    Every once in a while <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"> <br>
-	    Occassionally <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"> <br>
-	    All the time <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"> <br>
+	    <label> No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br>
+	    <label> Every once in a while <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
+	    <label> Occassionally <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label><br>
+	    <label> All the time <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
 	</p2>
 	
 	    <br>
@@ -170,7 +170,10 @@
 	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I don't know if I have any <br>
 	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I've got a whole library <br>
 	</p2>
-	
+
+  <p id="random_fact"></p> <br>
+
+  
 	<center>
 	  <p>Count: <span id="count">0</span></p>
 	  <a id="link" href="#">Visit Website</a> <br>
@@ -207,8 +210,6 @@
 	  -->
 
 	  <br>
-
-	  <p id="random_fact"></p>
 
 	  <script src="script.js"></script>
 	  
