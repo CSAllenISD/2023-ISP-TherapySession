@@ -1,6 +1,8 @@
 const form = document.getElementById('questionnaire-form');
 const btn = document.getElementById('submit');
 const headerHeight = $('header').outerHeight();
+const queryParams = new URLSearchParams(window.location.search);
+const score = queryParams.get('score');
 
 $(document).ready(function() {
     $('a[href^="#"]').on('click', function(event) {
@@ -37,8 +39,6 @@ form.addEventListener('submit', (event) => {
     checkboxes.forEach((checkbox) => {
 	answers[checkbox.value] += 1;
     });
-    const queryParams = new URLSearchParams(window.location.search);
-    const score = queryParams.get('score');
     score += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
     window.location.href = "questions_final.html?score=" + score;
 });
