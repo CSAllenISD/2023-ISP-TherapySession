@@ -39,9 +39,17 @@ form.addEventListener('submit', (event) => {
     checkboxes.forEach((checkbox) => {
 	answers[checkbox.value] += 1;
     });
-    var scores = +score;
-    scores += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
-    window.location.href = "questions_final.html?score=" + scores;
+    var score2 = +score;
+    score2 += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
+    if (score2 <= 22) {
+	window.location.href ="questions_answers.html?score=" + score2;
+    } else if (score2 <= 44 && score > 22) {
+	window.location.href = "questions_answers2.html?score=" + score2;
+    } else if (score2 <= 66 && score > 44) {
+	window.location.href = "questions_answers3.html?score=" + score2;
+    } else {
+	window.location.href = "questions_answers4.html?score=" + score2;
+    }
 });
 /*
 // Update link based on count
