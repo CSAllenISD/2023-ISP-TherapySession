@@ -1,6 +1,8 @@
 const form = document.getElementById('questionnaire-form');
 const btn = document.getElementById('submit');
 const headerHeight = $('header').outerHeight();
+const queryParams = new URLSearchParams(window.location.search);
+const score = queryParams.get('score');
 
 $(document).ready(function() {
     $('a[href^="#"]').on('click', function(event) {
@@ -37,9 +39,17 @@ form.addEventListener('submit', (event) => {
     checkboxes.forEach((checkbox) => {
 	answers[checkbox.value] += 1;
     });
-    var score = 0;
-    score += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
-    window.location.href = "questions_extended.html?score=" + score;
+    var score2s = +score;
+    scores += answers.score1 * 1 + answers.score2 * 2 + answers.score3 * 3 + answers.score4 * 4;
+    if (scores <= 22) {
+	window.location.href ="questions_answers.html?score=" + scores;
+    } else if (scores <= 44 && scores > 22) {
+	window.location.href = "questions_answers2.html?score=" + scores;
+    } else if (scores <= 66 && scores > 44) {
+	window.location.href = "questions_answers3.html?score=" + scores;
+    } else {
+	window.location.href = "questions_answers4.html?score=" + scores;
+    }
 });
 /*
 // Update link based on count

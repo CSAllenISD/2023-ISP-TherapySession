@@ -2,21 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <title>Health Questionnaire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/brainperson.ico">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>
-      Questions Continued
-    </title>
-    
-</head>
-
-<body>
-    <header>
-      <h1>
-        Section 2: Questions based on your previous answers (this is extended1)
-      </h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  
+  <body>
+    <header id="top">
+      <h1>Health Questionnaire</h1>
     </header>
 
     <nav>
@@ -27,111 +22,21 @@
       <a href="../index.html"> Send Feedback </a>
     </nav>
     
-    <br>
-
-      <main class="left-align">
-	
-      <p2> 1. Have you tried fixing your issues? <br>
-      <label> Yes I have <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/></label><br>
-      <label> I've tried <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/></label><br>
-      <label> Rarely <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/></label><br>
-      <label> Not at all <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/></label><br>
-      </p2>
-
-      <br>
-      
-      <p2> 2. Please describe/summarize your past expereinces <br>
-      <br>
-      <label><input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Traumatizing </label><br> 
-      <label><input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nothing bad nothing good </label><br>
-      <label><input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I'd rather not say </label><br>
-      <label><input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have some good memories </label><br>
-      </p2>
-
-      <br>
-
-      <p2> 3. Do you feel as much emotion as you used to? <br>
-	<br>
-      <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I still feel them <br>
-      <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nope I'm numb <br>
-      <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I only feel extreme emotions <br>
-      <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I feel some but not all <br>
-      </p2>
-
-      <br>
-      
-      <p2> 4. How often do you indulge in healthy habits like eating fruits and vegetables? <br>
-      <br>
-      <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I generally eat healthy <br>
-      <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't eat anything healthy <br>
-      <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I cheat on junk food every now and then <br>
-      <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I have only healthy things as my diet <br>
-      </p2>
-
-      <br>
-      
-      <p2> 5. How often do you engage in moderate to vigorous physical activity/exercise? <br>
-	<br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> One or two days a week <br>
-	<input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Once a month <br>
-	<input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Usually everyday <br>
-	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> None whatsoever <br>
-      </p2>
-
-      <br>
-      
-      <p2> 6. Have you ever been hospitalized for a medical condition? <br>
-	<br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Nope <br>
-	<input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't know <br>
-	<input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Only once or twice <br>
-	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Frequently <br>
-      </p2>
-
-      <br>
-      
-      <p2> 7. In the past 7 days, did you need help from others to perform everyday activities?
-	(eating, getting dressed, grooming, bathing, etc.) <br>
-	<br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I needed a little assistance <br>
-	<input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Rarely if at all <br>
-	<input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Nope I got it all by myself <br>
-	<input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I needed a lot of assistance <br>
-      </p2>
-
-      <br>
-      
-      <p2> 8. Do you have trouble sleeping? <br>
-	<br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I have one or two nights that I don't sleep <br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I can sleep just fine <br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I have frequent insomnia <br>
-	<input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Every once in a while, but it gets fixed quickly <br>
-      </p2>
-
-      <br>
-      
-      <p id="random_fact"></p>
-
-      <br>
-      
-      <center>
-	<!-- <p>Count: <span id="count">0</span></p>
-	<a id="link" href="">Visit Website</a> <br> -->
-	<a href="questions.html"><button>Back</button></a>
-	<a href="questions_final.html"><button>Next</button></a>
-      </center>
-      
-      </main>
-      <br>
+    <main>
+      <h2>Section 2: The second part of questions</h2>
+      <form id="questionnaire-form">
+	<div id="questions-container"></div>
+	<p id="random_fact"></p>
+	<button type="submit">Next</button>
+      </form>
+    </main>
+    <script src="genQuestions_extended.js"></script>
+    <script src="script_extended.js"></script>
     
-      <script src="script.js"></script>
-      
       <footer>
 	<p>&copy; 2023 Health Questionnaire. All rights reserved.</p>
-      </footer> 
-      
-</body>
+      </footer>
+  </body>
 </html>
 
 
