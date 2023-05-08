@@ -18,9 +18,9 @@ h1 {
     margin: 0;
     font-size: 36px;
 }
-mark {
+mark.hightlight {
     background-color: grey;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 nav {
     top: 0;
