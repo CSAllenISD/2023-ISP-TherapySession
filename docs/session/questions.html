@@ -1,233 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <title>Health Questionnaire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/brainperson.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header id="top">
+      <h1>Health Questionnaire</h1>
+    </header>
     
-    <title>
-      Questions
-    </title>
-
-</head>
-
-<body onload="generateRandomFact()">
-  <header>
-    <h1>
-      Section 1: Basic questions to help get you started and to know you better
-    </h1>
-  </header>
-
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../index.html">About Us</a>
-    <a href="../index.html">Contact Us</a>
-    <a href="../index.html">FAQs</a>
-    <a href="../index.html">Send Feedback</a>
-  </nav>	
-
-  <br>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html">About Us</a>
+      <a href="../index.html">Contact Us</a>
+      <a href="../index.html">FAQs</a>
+      <a href="../index.html">Send Feedback</a>
+    </nav>
   
-<main class="left-align">
-
-  <p2>
-            1. Do you have sudden mood swings? <br>
-	    <label> Nope <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br>
-	    <label> Rarely <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
-	    <label> Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label><br>
-	    <label> Often <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
-	    <!-- <input type="checkbox" id="vehicle1" value="Bike"> <br> -->
-	  </p2>
-	  
-	    <br>
-
-	<p2>
-	    2. Do you feel sad all the time? <br>
-	    <label> No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br> 
-	    <label> A little <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
-	    <label> Sometimes <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label>><br>
-	    <label> Yes <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
-	</p2>
-	    
-	    <br>
-
-	<p2>
-	    3. Do you have random thoughts that are hard to get out from your mind?<br>
-	    <label> No <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"></label><br>
-	    <label> Every once in a while <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"></label><br>
-	    <label> Occassionally <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"></label><br>
-	    <label> All the time <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"></label><br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    4. How have you been feeling lately?<br>
-	    <label> Pretty awful. I don't feel happy <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/></label><br> 
-	    <label> Pretty great. Nothing wrong so far <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/></label><br>
-	    <label> Just ok. I'm alright <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/></label><br>
-	    <label> Meh. could be better <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/></label><br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    5. Can you tell me more about your past experiences and how they may be impacting you now? <br>
-	    <label><input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I can't remember. But I don't care too much </label><br>
-	    <label><input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't like my past. Pretty scary </label><br>
-	    <label><input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> The past was the past. I look to the future and feel nothing </label><br>
-	    <label><input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I think it was a pretty decent past. I like to look back on the good times </label><br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    6. How do you typically cope with stress or difficult emotions? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I just take deep breaths and calm myself down <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I don't know. I usually end up freaking out <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I try my hardest but it only goes away partially <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I can calm myself down but only for so long <br>
-	    <input type="checkbox" name="checkbox5" value="1" onclick="updateCount()"/> I don't show emotion and keep a straight face <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    7. How often do you get a health checkup? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I don't get/can't afford checkups <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I get one at least once or twice a year <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I get one each month or so <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I get two/three or more each month <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    8. Over the past 2 weeks, how often have you felt nervous, anxious, or on edge? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Barely, if at all <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Maybe once or twice <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Probably a few times <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Almost everyday <br>
-	</p2>
-
-	    <br>
-
-	<p2>
-	    9. On how many of the last 7 days did you engage in moderate to strenuous exercise? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I didn't exercise <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> One/two <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Three to Five <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Six/Seven <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    10. Overall how would you rate your physical health? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I think i'm decent <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I'm in the best shape I can be <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I'm pretty unhealthy looking <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I could use some improvements <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    11. Have you felt particularly low or down for more than 2 weeks in a row? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Close to two weeks <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> Less than a week <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Perhaps a day or two <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    12. Do you think about past events too much? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I think about them constantly <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> I think about them from time to time <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I've thought about them for a day or two only <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> Why live in the past? <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    13. Do you constantly feel like checking things like if the door is locked in the house or if the stove if off? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> Yes, it's one of my pet peeves <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Not at all. I trust myself enough <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I like to check sometimes just in case <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I only do that for valuable items <br>
-	</p2>
-	
-	    <br>
-
-	<p2>
-	    14. Do you have any worries/fears? <br>
-	    <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> I have only one or two <br>
-	    <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> Nope, I don't fear anything <br>
-	    <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> I don't know if I have any <br>
-	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I've got a whole library <br>
-	</p2>
-
-	
-  <p id="random_fact">
-
-  </p>
-  <br>
-
-  <br>
-  
-  
-	<center>
-	  <!-- <p>Count: <span id="count">0</span></p>
-	  <a id="link" href="#">Visit Website</a> <br> -->
-          <a href="../index.html"><button>Back</button></a>
-	  <a href="questions_extended.html"><button>Next</button></a>
-	</center> 
-	
-	</main>
-	<br>
-	  
-
-
-
-	  <!-- <input type="checkbox" id="questiontypesad">
-
-	  <script>
-	    let count = 0;
-	    const checkbox = document.getElementById("questiontypesad");
-	    checkbox.addEventListener("click", function() {
-		if (this.checked) {
-		    count++;
-		} else {
-		    count--;
-		}
-		console.log("Count is now: " + count);
-	    });
-	  </script>
-	  
-	      copy paste this
-	  <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/>
-	  <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/>
-	  <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/>
-	  <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/>
-	  -->
-
-	  <br>
-
-	  <script src="script.js"></script>
-	  
-	  <footer>
-	    <p>&copy; 2023 Health Questionnaire. All rights reserved.</p>
-	  </footer>
-	  
-</body>
+    <main>
+      <h2>Section 1: Basic questions to help get you started and to know you better</h2>
+      <form id="questionnaire-form">
+	<div id="questions-container"></div>
+	<p id="random_fact"></p>
+	<button type="submit">Next</button>
+      </form>
+    </main>
+    <script src="genQuestions.js"></script>
+    <script src="script.js"></script>
+    
+    <footer>
+      <p>&copy; 2023 Health Questionnaire. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
-
-
-
-    
-
-    
