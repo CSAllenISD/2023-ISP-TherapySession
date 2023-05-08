@@ -9,6 +9,10 @@
     <title>
       Questions
     </title>
+
+    <script>
+      window.onload = generateRandomFact();
+</script>
     
 </head>
 
@@ -64,10 +68,10 @@
 
 	<p2>
 	    4. How have you been feeling lately?<br>
-	    Pretty awful. I don't feel happy <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/> <br> 
-	    Pretty great. Nothing wrong so far <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/> <br>
-	    Just ok. I'm alright <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/> <br>
-	    Meh. could be better <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> <br>
+	    <label> Pretty awful. I don't feel happy <input type="checkbox" name="checkbox1" value="1" onclick="updateCount()"/></label><br> 
+	    <label> Pretty great. Nothing wrong so far <input type="checkbox" name="checkbox2" value="1" onclick="updateCount()"/></label><br>
+	    <label> Just ok. I'm alright <input type="checkbox" name="checkbox3" value="1" onclick="updateCount()"/></label><br>
+	    <label> Meh. could be better <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/></label><br>
 	</p2>
 	
 	    <br>
@@ -171,13 +175,17 @@
 	    <input type="checkbox" name="checkbox4" value="1" onclick="updateCount()"/> I've got a whole library <br>
 	</p2>
 
-  <p id="random_fact"></p> <br>
+	
+  <p id="random_fact">
+  </p> <br>
 
+  <br>
+  
   
 	<center>
 	  <!-- <p>Count: <span id="count">0</span></p>
 	  <a id="link" href="#">Visit Website</a> <br> -->
-          <a href="index.html"><button>Back</button></a>
+          <a href="../index.html"><button>Back</button></a>
 	  <a href="questions_extended.html"><button>Next</button></a>
 	</center> 
 	
